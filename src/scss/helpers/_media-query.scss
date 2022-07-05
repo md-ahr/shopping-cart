@@ -1,0 +1,21 @@
+// breakpoints
+$breakpoints:('mobile': (min-width: 360px),
+  'largeMobile': (min-width: 425px),
+  'xlMobile': (min-width: 600px),
+  'tablet': (min-width: 768px),
+  'smallLaptop': (min-width: 992px),
+  'laptop': (min-width: 1200px),
+  'desktop': (min-width: 1400px));
+
+// crud modal
+@mixin respondScreen($screen) {
+  @if map-has-key($breakpoints, $screen) {
+    @media #{inspect(map-get($breakpoints, $screen))} {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$screen}`. ";
+  }
+}
