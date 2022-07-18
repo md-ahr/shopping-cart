@@ -4,4 +4,40 @@
     &__center-banner {
         text-align: center;
     }
+
+    &__product-list {
+
+        .item-wrapper {
+
+            .item {
+                width: 16.67%;
+
+                .img-product {
+                    width: 120px;
+                }
+
+                .name {
+                    color: $dark;
+                    font-size: 1rem;
+                    margin-top: 0.625em;
+                }
+
+                .brand {
+                    color: $light;
+                    font-size: 0.875rem;
+                    margin-top: 0.325em;
+                }
+
+                .price {
+                    margin-top: 0.375em;
+                    font-weight: bold;
+                    font-size: 1.125rem;
+                }
+
+                .btn {
+                    margin-top: 0.625em;
+                }
+            }
+        }
+    }
 }

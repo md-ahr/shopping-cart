@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/images/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page - Shopping Cart</title>
+  </head>
+  <body>
+
+    <header class="header-wrapper">
+        <nav class="navbar navbar-expand-md bg-white">
+          <div class="container">
+            <a href="/index.html" class="navbar-brand mb-0">
+              <img src="./src/images/favicon.svg" alt="logo" /> VCart
+            </a>
+            <div class="navbar-search w-100 text-center">
+              <div class="input-group mx-auto">
+                <input type="text" class="navbar-search-input form-control" placeholder="Search Products..." />
+                <button type="button" class="btn navbar-search-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <ul class="navbar-nav mb-0">
+              <li class="nav-item">
+                <a href="/cart.html" class="nav-link cart-icon position-relative text-dark">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg>
+                  <span class="cart-icon-badge position-absolute top-20 start-10 translate-middle bg-danger border border-light rounded-circle">
+                    <span class="badge" id="js--cart-count">0</span>
+                    <span class="visually-hidden">cart badge</span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm py-2">
+          <ul class="navbar-nav mx-auto mb-0">
+            <li class="nav-item">
+              <a href="" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Books</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Electronics</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Gifts</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Men</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Female</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Kids</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+
+    <main class="main-wrapper container mx-auto">
+        <div class="card">
+            <div class="card-header py-3 px-4">
+                <h4 class="card-title mb-0">My Cart</h4>
+            </div>
+            <div class="card-body px-4" id="js--cart-list">
+                <!-- Load from javascript -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-light text-center text-secondary">
+        <p class="small py-3">&copy; 2022 <a href="https://iamhalim.com" target="_blank" class="text-secondary text-decoration-underline">iamhalim.com</a> all rights reserved</p>
+    </footer>
+
+    <script type="module" src="./src/js/app.js" defer></script>
+</body>
+</html>

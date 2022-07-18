@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./src/images/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shopping Cart</title>
+    <title>Home Page - Shopping Cart</title>
   </head>
   <body>
 
     <header class="header-wrapper">
       <nav class="navbar navbar-expand-md bg-white">
         <div class="container">
-          <a href="" class="navbar-brand mb-0">
+          <a href="index.html" class="navbar-brand mb-0">
             <img src="./src/images/favicon.svg" alt="logo" /> VCart
           </a>
           <div class="navbar-search w-100 text-center">
@@ -26,12 +26,12 @@
           </div>
           <ul class="navbar-nav mb-0">
             <li class="nav-item">
-              <a href="" class="nav-link cart-icon position-relative text-dark">
+              <a href="/cart.html" class="nav-link cart-icon position-relative text-dark">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
                   <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
                 </svg>
                 <span class="cart-icon-badge position-absolute top-20 start-10 translate-middle bg-danger border border-light rounded-circle">
-                  <span class="badge">0</span>
+                  <span class="badge" id="js--cart-count">0</span>
                   <span class="visually-hidden">cart badge</span>
                 </span>
               </a>
@@ -73,49 +73,8 @@
       <div class="main-wrapper__product-list mt-4">
         <div class="card bg-light shadow-sm px-3 py-3">
           <h5 class="fw-bold px-2 mb-0">Popular Books</h5>
-          <div class="item-wrapper d-flex justify-content-around mt-4">
-            <div class="item text-center">
-              <img src="https://ds.rokomari.store/rokomari110/ProductNew20190903/130X186/Rag_Niyontrone_Rakhun-Abu_Zarif-11f8f-226653.jpg" class="img-fluid" alt="product_image" />
-              <p class="name">Product Name</p>
-              <p class="brand">Brand Name</p>
-              <p class="price">$150</p>
-              <button>Add To Cart</button>
-            </div>
-            <div class="item text-center">
-              <img src="https://ds.rokomari.store/rokomari110/ProductNew20190903/130X186/Rag_Niyontrone_Rakhun-Abu_Zarif-11f8f-226653.jpg" class="img-fluid" alt="product_image" />
-              <p class="name">Product Name</p>
-              <p class="brand">Brand Name</p>
-              <p class="price">$150</p>
-              <button>Add To Cart</button>
-            </div>
-            <div class="item text-center">
-              <img src="https://ds.rokomari.store/rokomari110/ProductNew20190903/130X186/Rag_Niyontrone_Rakhun-Abu_Zarif-11f8f-226653.jpg" class="img-fluid" alt="product_image" />
-              <p class="name">Product Name</p>
-              <p class="brand">Brand Name</p>
-              <p class="price">$150</p>
-              <button>Add To Cart</button>
-            </div>
-            <div class="item text-center">
-              <img src="https://ds.rokomari.store/rokomari110/ProductNew20190903/130X186/Rag_Niyontrone_Rakhun-Abu_Zarif-11f8f-226653.jpg" class="img-fluid" alt="product_image" />
-              <p class="name">Product Name</p>
-              <p class="brand">Brand Name</p>
-              <p class="price">$150</p>
-              <button>Add To Cart</button>
-            </div>
-            <div class="item text-center">
-              <img src="https://ds.rokomari.store/rokomari110/ProductNew20190903/130X186/Rag_Niyontrone_Rakhun-Abu_Zarif-11f8f-226653.jpg" class="img-fluid" alt="product_image" />
-              <p class="name">Product Name</p>
-              <p class="brand">Brand Name</p>
-              <p class="price">$150</p>
-              <button>Add To Cart</button>
-            </div>
-            <div class="item text-center">
-              <img src="https://ds.rokomari.store/rokomari110/ProductNew20190903/130X186/Rag_Niyontrone_Rakhun-Abu_Zarif-11f8f-226653.jpg" class="img-fluid" alt="product_image" />
-              <p class="name">Product Name</p>
-              <p class="brand">Brand Name</p>
-              <p class="price">$150</p>
-              <button>Add To Cart</button>
-            </div>
+          <div class="item-wrapper d-flex justify-content-around mt-4" id="js--item-list">
+            <!-- Load from javascript -->
           </div>
         </div>
       </div>
@@ -125,6 +84,6 @@
       <p class="small py-3">&copy; 2022 <a href="https://iamhalim.com" target="_blank" class="text-secondary text-decoration-underline">iamhalim.com</a> all rights reserved</p>
     </footer>
 
-    <script type="module" src="./src/js/app.js"></script>
+    <script type="module" src="./src/js/app.js" defer></script>
   </body>
 </html>
